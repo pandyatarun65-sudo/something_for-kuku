@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thoda aur intezaar 💗</title>
+
+  <style>
+    body{
+      margin:0;
+      padding:0;
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background: linear-gradient(135deg, #ff9ad5, #ffd1e8);
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .box{
+      position: relative;
+      width:90%;
+      max-width:380px;
+      padding:30px 20px;
+      border-radius:22px;
+
+      /* background photo inside box */
+      background:
+        linear-gradient(rgba(255,255,255,0.75), rgba(255,255,255,0.75)),
+        url("photo.jpg"); /* <-- apni photo ka naam */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      box-shadow:0 12px 30px rgba(0,0,0,0.25);
+      text-align:center;
+      color:#333;
+    }
+
+    h2{
+      margin-bottom:12px;
+    }
+
+    p{
+      font-size:16px;
+      line-height:1.5;
+      margin-bottom:18px;
+    }
+
+    a{
+      display:inline-block;
+      margin-top:10px;
+      text-decoration:none;
+      background:#ff4fa3;
+      color:#fff;
+      padding:12px 28px;
+      border-radius:14px;
+      font-size:16px;
+      box-shadow:0 6px 15px rgba(0,0,0,0.25);
+    }
+
+    a:hover{
+      background:#ff2f92;
+    }
+
+    /* stickers */
+    .sticker{
+      position:absolute;
+      width:60px;
+      opacity:0.95;
+    }
+
+    .top-left{
+      top:-20px;
+      left:-20px;
+    }
+
+    .bottom-right{
+      bottom:-20px;
+      right:-20px;
+    }
+
+    /* mobile safety */
+    @media (max-width:480px){
+      .sticker{
+        width:50px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+    <!-- stickers -->
+    <img src="sticker1.png" class="sticker top-left" alt="">
+    <img src="sticker2.png" class="sticker bottom-right" alt="">
+
+    <h2>Sorryyy 😅</h2>
+
+    <p>
+      Thoda sa aur intezaar karna padega…  
+      <br>
+      Intezaar ka fal hamesha sweet hota hai 🍭
+    </p>
+
+    <p>Tab tak ye dekh le 🤍</p>
+
+    <!-- YouTube link only -->
+    <a href="https://youtube.com/@dreamtooncomedy?si=DImKfpEhLoupHeud" target="_blank">
+      Video dekho ▶️
+    </a>
+  </div>
+
+</body>
+</html>
